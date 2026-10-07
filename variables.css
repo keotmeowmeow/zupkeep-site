@@ -1,0 +1,40 @@
+/* Zupkeep design tokens. Every component reads from here. */
+:root {
+  --zupkeep-primary: #FE8101;
+  --zupkeep-primary-hover: #E57300;
+  --zupkeep-secondary: #181919;
+  --zupkeep-accent: #FFC21A;
+  --zupkeep-accent-text: #A85400;
+  --zupkeep-background: #FFFFFF;
+  --zupkeep-surface: #FFF5E6;
+  --zupkeep-text: #181919;
+  --zupkeep-muted: #5A5B5B;
+  --zupkeep-border: #E9E2D6;
+  --zupkeep-on-dark: #FFFFFF;
+  --zupkeep-on-dark-muted: #C9C6C0;
+  --zupkeep-dark-border: #3A3B3B;
+  --zupkeep-error: #B3261E;
+
+  --zupkeep-display-font: "Bricolage Grotesque", "Montserrat", system-ui, sans-serif;
+  --zupkeep-heading-font: "Bricolage Grotesque", "Montserrat", system-ui, sans-serif;
+  --zupkeep-body-font: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --text-display: clamp(2.5rem, 6vw, 4.5rem);
+  --text-h2: clamp(1.9rem, 4vw, 3rem);
+  --text-h3: clamp(1.25rem, 2vw, 1.5rem);
+  --text-body: 1.0625rem;
+  --text-small: 0.875rem;
+  --text-eyebrow: 0.8125rem;
+
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --section-pad: clamp(64px, 9vw, 112px);
+  --gutter: clamp(16px, 4vw, 40px);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --container-width: 1200px;
+  --ease: 200ms ease;
+}

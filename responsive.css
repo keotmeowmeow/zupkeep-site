@@ -1,0 +1,38 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  .cards, .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cities { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .nav__list { gap: var(--space-4); }
+  .nav__cta .btn--secondary { display: none; }
+}
+/* Mobile: its own layout, not a shrunken desktop */
+@media (max-width: 820px) {
+  .nav-toggle { display: block; }
+  .nav { position: fixed; inset: calc(72px + env(safe-area-inset-top, 0px)) 0 0 0; background: var(--zupkeep-background); flex-direction: column; align-items: stretch; justify-content: flex-start; gap: var(--space-6); padding: var(--space-6) var(--gutter); overflow-y: auto; visibility: hidden; opacity: 0; transition: opacity var(--ease), visibility var(--ease); }
+  .nav.is-open { visibility: visible; opacity: 1; }
+  .nav__list { flex-direction: column; gap: 0; }
+  .nav__list a { display: block; font: 700 1.6rem/1.2 var(--zupkeep-heading-font); padding-block: 14px; border-bottom: 1px solid var(--zupkeep-border); }
+  .nav__cta { flex-direction: column; }
+  .nav__cta .btn--secondary { display: inline-flex; }
+  .nav__cta .btn { min-height: 52px; font-size: 1rem; }
+  .nav__phone { display: block; font-weight: 600; }
+  .split, .note { grid-template-columns: minmax(0, 1fr); }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .step { border-top: 0; border-left: 3px solid var(--zupkeep-text); padding: 0 0 var(--space-6) var(--space-5); }
+  .step:last-child { padding-bottom: 0; }
+  .quotes, .team { grid-template-columns: minmax(0, 1fr); }
+  .hero .photo { aspect-ratio: 4 / 3; }
+  .photo--portrait { aspect-ratio: 4 / 3; }
+  .strip__inner { flex-direction: column; align-items: flex-start; }
+  .form { grid-template-columns: minmax(0, 1fr); }
+  body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
+  .actionbar { display: grid; grid-template-columns: 1fr 1.4fr; gap: var(--space-2); position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--zupkeep-background); border-top: 1px solid var(--zupkeep-border); padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (max-width: 560px) {
+  .cards, .pillars, .footer__grid { grid-template-columns: minmax(0, 1fr); }
+  .hero .btn-row .btn, .final .btn-row .btn { width: 100%; }
+  .ruled > li { flex-direction: column; gap: 2px; }
+  .ruled span { text-align: left; }
+  .cities a, .cities span { font-size: 1rem; }
+}
